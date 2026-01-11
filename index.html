@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- LOCK SCREEN WITH VIDEO -->
+    <div id="lock-screen">
+        <video class="lock-video" autoplay muted loop playsinline>
+            <source src="videos/video-bg.mp4" type="video/mp4">
+        </video>
+
+        <div class="lock-content">
+
+            <h2>🥳 Happy Birthday 🥳<br> 💖My Love💖 </h2>
+
+            <input type="password" id="password" placeholder="Hint: your nickname 😉">
+
+            <button id="show" onclick="togglePassword()">Show nickname 👁</button>
+            <button id="unlock" onclick="unlock()">Unlock 💖</button>
+        </div>
+    </div>
+
+    <!-- FLOATING HEARTS -->
+    <div class="hearts"></div>
+
+    <!-- MAIN CONTENT -->
+    <main id="main-content" hidden>
+
+        <section class="hero">
+            <h1>Happy Birthday 🎉</h1>
+            <p>hope you have a wonderful day babe 🎂❤️🎂</p>
+        </section>
+
+        <div class="video-container">
+            <video class="runner" src="videos/Happy Birthday Greeting.webm" autoplay loop muted playsinline>
+            </video>
+        </div>
+
+        <section class="music">
+            <audio id="bg-music" src="music/Samthing Soweto - Happy Birthday.mp3" loop></audio>
+            <button onclick="toggleMusic()">Play / Pause 🎵</button>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-track">
+                <img src="images/IMG-20251129-WA0019.jpg">
+                <img src="images/IMG-20251129-WA0020.jpg">
+                <img src="images/IMG-20251129-WA0021.jpg">
+                <img src="images/IMG-20251205-WA0023.jpg">
+                <img src="images/IMG-20251228-WA0013.jpg">
+                <img src="images/IMG-20251228-WA0015.jpg">
+                <img src="images/IMG-20251228-WA0016.jpg">
+                <img src="images/IMG-20251228-WA0017.jpg">
+                <img src="images/IMG-20251012-WA0000.jpg">
+                <img src="images/IMG-20251020-WA0014.jpg">
+
+                <!-- DUPLICATE IMAGES FOR SMOOTH LOOP -->
+
+                <img src="images/IMG-20251129-WA0019.jpg">
+                <img src="images/IMG-20251129-WA0020.jpg">
+                <img src="images/IMG-20251129-WA0021.jpg">
+                <img src="images/IMG-20251205-WA0023.jpg">
+                <img src="images/IMG-20251228-WA0013.jpg">
+                <img src="images/IMG-20251228-WA0015.jpg">
+                <img src="images/IMG-20251228-WA0016.jpg">
+                <img src="images/IMG-20251228-WA0017.jpg">
+                <img src="images/IMG-20251012-WA0000.jpg">
+                <img src="images/IMG-20251020-WA0014.jpg">
+            </div>
+        </section>
+
+        <section class="gif-box">
+            <div class="gif-grid">
+                <img src="gifs/gif1.gif" alt="Cute gif 1">
+                <img src="gifs/gif2.gif" alt="Cute gif 2">
+                <img src="gifs/gif3.gif" alt="Cute gif 3">
+                <img src="gifs/gif4.gif" alt="Cute gif 4">
+                <img src="gifs/gif5.gif" alt="Cute gif 5">
+                <img src="gifs/gif6.gif" alt="Cute gif 6">
+            </div>
+        </section>
+
+
+        <section class="letter-container">
+            <button class="open-letter" onclick="openLetter()">Open My Letter 💌</button>
+
+            <div class="letter" id="letter">
+                <p>
+                    Happy Birthday my love 💕
+                    Every day with you feels like a blessing.
+                    Your smile, your heart, your strength —
+                    I’m grateful for all of it.
+                </p>
+                <div class="signature">Yours, S.</div>
+            </div>
+        </section>
+
+        <section class="share">
+            <a href="https://wa.me/?text=I made something special for you ❤️" target="_blank">
+                Share on WhatsApp 💬
+            </a>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
