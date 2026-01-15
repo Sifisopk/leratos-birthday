@@ -102,7 +102,7 @@ body {
   display: flex;
   gap: 12px;
   width: max-content;
-  animation: scrollGallery 25s linear infinite;
+  animation: scrollGallery 35s linear infinite;
 }
 
 .gallery img {
